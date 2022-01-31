@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: export token
+     # - name: export token
      #   run: export CR_PAT= ${{secrets.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}}
      # - name: check token
      #   run: echo $CR_PAT
