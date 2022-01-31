@@ -2,7 +2,7 @@ name: Aunt Irma
 
 on:
   push:
-    branches: ['master']
+    branches: [ main ]
 
 env:
   REGISTRY: ghcr.io
