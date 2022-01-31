@@ -18,9 +18,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
+      - name: export token
+        run: export CR_PAT="${{ secrets.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 }}"
       - name: Log in to the Container registry
-        run: echo ${{ secrets.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 }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+        run: CR_PAT  | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
