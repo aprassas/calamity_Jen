@@ -23,7 +23,7 @@ jobs:
      # - name: check token
      #   run: echo $CR_PAT
       - name: Log in to the Container registry
-        run: docker login ghcr.io -u ${{ github.actor }} -p 
+        run: docker login ghcr.io -u ${{ github.actor }} -p $CR_PAT
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
