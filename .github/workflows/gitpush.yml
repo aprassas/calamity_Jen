@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Log in to the Container registry
-        run: echo "${{ secrets.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 }}" | docker login ghcr.io -u ${{ secrets.GIT_USER }} -p-stdin
+        run: echo "${{ secrets.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 }}" | docker login ghcr.io -u ${{ secrets.GIT_USER }} --password-stdin
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
