@@ -22,7 +22,7 @@ jobs:
       - name: Log in to the Container registry
         env:
           user: ${{ secrets.git_user }}
-          pass: ${{ secrets.git_pass}}
+          pass: ${{ secrets.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}}
         #uses: docker/login-action@v1
         run: docker login -u ${{ github.repository_owner }} -p $env:pass ghcr.io
         #with:
