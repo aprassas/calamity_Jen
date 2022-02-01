@@ -24,7 +24,7 @@ jobs:
           user: ${{ secrets.docker_user }}
           pass: ${{ secrets.docker_pass }}
        # uses: docker/login-action@v1
-        run: docker login -u $env:user -p $env:pass
+        run: docker login -u ${{env:user}} -p ${{env:pass}}
         #with:
          # registry: ghcr.io
          # username: $user
