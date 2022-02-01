@@ -27,7 +27,7 @@ jobs:
         #run: docker login -u "$env:user" -p "$env:pass"
         with:
           registry: ghcr.io
-          username: $user
+          username: ${{ github.repository_owner }}
           password: $pass
       - name: Extract metadata (tags, labels) for Docker
         id: meta
