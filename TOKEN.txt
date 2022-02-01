@@ -1,1 +1,1 @@
-${{secrets.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}}
+"${{secrets.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}}"
