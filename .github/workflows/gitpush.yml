@@ -24,7 +24,7 @@ jobs:
           user: ${{ secrets.git_user }}
           pass: ${{ secrets.git_pass }}
         #uses: docker/login-action@v1
-        run: echo ${{ secrets.git_pass }} | docker login -u ${{ github.repository_owner }} --password-stdin ghcr.io
+        run: docker login -u ${{ github.repository_owner }} -p ${{ secrets.git_pass }}  ghcr.io
         #with:
           #registry: ghcr.io
           #username: ${{ github.repository_owner }}
