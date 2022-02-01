@@ -30,7 +30,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor}}
-          password: ${{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}}
+          password: ${{secrets.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}}
       - name: Extract metadata (tags, labels) for Docker
         id: meta
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
