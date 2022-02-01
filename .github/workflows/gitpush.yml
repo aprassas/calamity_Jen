@@ -21,8 +21,8 @@ jobs:
      
       - name: Log in to the Container registry
         env:
-          user: ${{ secrets.docker_user }}
-          pass: ${{ secrets.docker_pass }}
+          user: ${{ secrets.git_user }}
+          pass: ${{ secrets.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 }}
        # uses: docker/login-action@v1
         run: docker login -u ${{env:user}} -p ${{env:pass}}
         #with:
