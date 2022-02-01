@@ -23,12 +23,12 @@ jobs:
         env:
           user: ${{ secrets.git_user }}
           pass: ${{ secrets.git_pass}}
-       # uses: docker/login-action@v1
-        run: docker login -u "$env:user" -p "$env:pass"
-        #with:
-         # registry: ghcr.io
-         # username: $user
-         # password: $pass
+        uses: docker/login-action@v1
+        #run: docker login -u "$env:user" -p "$env:pass"
+        with:
+          registry: ghcr.io
+          username: $user
+          password: $pass
       - name: Extract metadata (tags, labels) for Docker
         id: meta
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
